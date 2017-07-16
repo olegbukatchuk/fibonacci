@@ -28,11 +28,11 @@ $ git clone https://github.com/olegbukatchuk/fibonacci.git
 ```markdown
 $ cd fibonacci/
 ```
-Запустить сборку
+#### Запустить сборку
 ```markdown
 $ docker-compose up -d
 ```
-После завершения сборки контейнеров вы должны увидеть сдедующее:
+#### После завершения сборки контейнеров вы должны увидеть сдедующее:
 ```markdown
 Creating php-fibonacci ...
 Creating php-fibonacci ... done
