@@ -28,6 +28,6 @@ RUN apt-get update && apt-get install -y libmysqlclient-dev \
 
 WORKDIR /var/www/
 
-VOLUME ["${HOME}/parallels/www/fibonacci/", "${HOME}/parallels/logs/nginx/fibonacci"]
+VOLUME ["${HOME}/fibonacci/www/fibonacci/", "${HOME}/fibonacci/logs/nginx/fibonacci"]
 
 ADD fibonacci.conf /usr/local/etc/php-fpm.d/fibonacci.conf

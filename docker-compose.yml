@@ -5,11 +5,11 @@ services:
     container_name: www-balancer
     restart: always
     build:
-      context: ${HOME}/parallels/nginx
+      context: ${HOME}/fibonacci/nginx
     ports:
       - 80:80
     volumes:
-      - ${HOME}/parallels/logs/balancer/:/var/log/nginx
+      - ${HOME}/fibonacci/logs/balancer/:/var/log/nginx
     links:
       - www_fibonacci
 
@@ -17,18 +17,17 @@ services:
     container_name: php-fibonacci
     restart: always
     build:
-      context: ${HOME}/parallels/php-fpm/fibonacci
+      context: ${HOME}/fibonacci/php-fpm/fibonacci
     volumes:
-      - ${HOME}/parallels/logs/var/fibonacci:/var/log/
-      - ${HOME}/parallels/www/fibonacci:/var/www/fibonacci
+      - ${HOME}/fibonacci/logs/var/fibonacci:/var/log/
+      - ${HOME}/fibonacci/www/fibonacci:/var/www/fibonacci
 
   www_fibonacci:
     container_name: www-fibonacci
-    build: ${HOME}/parallels/nginx/fibonacci
+    build: ${HOME}/fibonacci/nginx/fibonacci
     volumes:
-      - ${HOME}/parallels/logs/nginx/fibonacci:/var/log/nginx
-      - ${HOME}/parallels/www/fibonacci:/var/www/fibonacci
+      - ${HOME}/fibonacci/logs/nginx/fibonacci:/var/log/nginx
+      - ${HOME}/fibonacci/www/fibonacci:/var/www/fibonacci
     restart: always
     links:
       - php_fibonacci
-      
