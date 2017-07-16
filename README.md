@@ -46,7 +46,6 @@ Creating www-balancer ... done
 $ docker ps
 ```
 #### Вывод должен быть примерно таким 
-Отличатся будут только столбцы (CONTAINER ID, CREATED и STATUS)
 ```markdown
 CONTAINER ID        IMAGE                     COMMAND                  CREATED             STATUS              PORTS                NAMES
 8e6ecb1ccaf9        fibonacci_www_balancer    "nginx -g 'daemon ..."   About an hour ago   Up About an hour    0.0.0.0:80->80/tcp   www-balancer
