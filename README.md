@@ -2,8 +2,8 @@
 
 Сервис принимает целое число, которое является порядковым номером в ряде Фибоначчи и возвращает значение этого элемента.
 
-## Инструкция по установке
-
+## Инструкция по использованию
+### Подготовка
 #### Установить менеджер пакетов Homebrew (если не установлен)
 ```markdown
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -14,6 +14,7 @@ $ brew install git
 ```
 #### Установить Docker и Docker Compose (если не установлен)
 Инструкция по установке: [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/)
+### Установка
 #### Перейти в домашнюю директорию
 ```markdown
 $ cd ${HOME}
