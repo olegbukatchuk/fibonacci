@@ -44,6 +44,9 @@ Creating www-balancer ... done
 #### Проверить статус запущенных контейнеров можно командой
 ```markdown
 $ docker ps
+```
+#### Вывод должен быть примерно таким
+```markdown
 CONTAINER ID        IMAGE                     COMMAND                  CREATED             STATUS              PORTS                NAMES
 8e6ecb1ccaf9        fibonacci_www_balancer    "nginx -g 'daemon ..."   About an hour ago   Up About an hour    0.0.0.0:80->80/tcp   www-balancer
 8b21eb015e94        fibonacci_www_fibonacci   "nginx -g 'daemon ..."   About an hour ago   Up About an hour    80/tcp               www-fibonacci
