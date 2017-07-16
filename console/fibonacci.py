@@ -3,7 +3,7 @@
 fibbonacci_one = 1
 fibbonacci_two = 1
 
-number = input("Введите номер элемента в ряде Фиббоначи...\n")
+number = input("Введите номер элемента в ряде Фибоначчи...\n")
 number = int(number)
 
 i = 2
