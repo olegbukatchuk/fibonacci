@@ -13,9 +13,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew install git
 ```
 #### Установить Docker и Docker Compose (если не установлен)
-```markdown
-$ https://docs.docker.com/engine/installation/
-```
+Инструкция по установке: [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/)
 #### Перейти в домашнюю директорию
 ```markdown
 $ cd ${HOME}
