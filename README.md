@@ -64,4 +64,10 @@ $ cd ${HOME}/fibonacci/console
 ```markdown
 $ python3 fibonacci.py
 ```
+### Запуск скрипта на Python3
+```markdown
+Введите номер элемента в ряде Фиббоначи...
+10
+55
+```
 Profit!
