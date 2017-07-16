@@ -41,6 +41,14 @@ Creating www-fibonacci ... done
 Creating www-balancer ... 
 Creating www-balancer ... done
 ```
+#### Проверить статус запущенных контейнеров можно командой
+```markdown
+$ docker ps
+CONTAINER ID        IMAGE                     COMMAND                  CREATED             STATUS              PORTS                NAMES
+8e6ecb1ccaf9        fibonacci_www_balancer    "nginx -g 'daemon ..."   About an hour ago   Up About an hour    0.0.0.0:80->80/tcp   www-balancer
+8b21eb015e94        fibonacci_www_fibonacci   "nginx -g 'daemon ..."   About an hour ago   Up About an hour    80/tcp               www-fibonacci
+33ba2f2a2910        fibonacci_php_fibonacci   "docker-php-entryp..."   About an hour ago   Up About an hour    9000/tcp             php-fibonacci
+```
 #### Открываем браузер и вводим адрес
 ```markdown
 http://localhost
